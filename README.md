@@ -62,6 +62,7 @@ Pillow - Manipulação de imagens
 ttk - Componentes gráficos avançados
 
 🚀 Como Executar
+
 1 - Clone o repositório:
 
 git clone (https://github.com/wcguii/Compra_Facil)
