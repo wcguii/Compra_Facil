@@ -51,7 +51,7 @@ ttk - Componentes gráficos avançados
 🚀 Como Executar
 1 - Clone o repositório:
 
-git clone [https://github.com/seu_usuario/compra_facil.git](https://github.com/wcguii/Compra_Facil)
+git clone (https://github.com/wcguii/Compra_Facil)
 cd compra_facil
 
 2- Instale as dependências:
