@@ -50,7 +50,9 @@ compra_facil/
 └── README.md                   # Documentação
 
 
-Sobre a pasta __pycache__
+Sobre a pasta __pycache__ :
+
+
 A pasta __pycache__ é criada automaticamente pelo Python para armazenar arquivos compilados (.pyc). Esses arquivos servem para acelerar a execução do código, evitando que o Python precise interpretar novamente os mesmos arquivos todas as vezes que o programa for executado.
 
 Importante:
