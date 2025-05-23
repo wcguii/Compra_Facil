@@ -24,15 +24,15 @@ Para usuários existentes → com base no histórico de compras
 🏗️ Estrutura do Projeto
 
 compra_facil/
-├── assets/
-│   └── comprafacil.png         # Imagem do sistema
-├── modules/
-│   ├── user.py                 # Lógica de usuários e compras
-│   ├── item.py                 # Lógica de itens/produtos
-│   └── recommendation.py       # Sistema de recomendação
 ├── data/
 │   ├── users.db                # Banco de dados de usuários e compras
 │   └── items.db                # Banco de dados de produtos
+├── image/
+│   └── comprafacil.png         # Imagem do sistema
+├── modules/
+│   ├── item.py                 # Lógica de itens/produtos
+│   ├── recommendation.py       # Sistema de recomendação
+│   └── user.py                 # Lógica de usuários e compras
 ├── main.py                     # Arquivo principal, interface gráfica
 └── README.md                   # Documentação
 
