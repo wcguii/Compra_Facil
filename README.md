@@ -7,7 +7,6 @@ Permite gerenciar usuários, produtos, realizar compras e sugerir produtos com b
 
 📋 Cadastro, listagem e remoção de usuários
 
-🛍️ Cadastro, listagem e remoção de itens
 
 💰 Registro de compras com seleção direta de produtos
 
