@@ -96,9 +96,7 @@ Listar Itens      | Remover Item    | Realizar Compra | Sair
 Funções para:
 
 Cadastrar, listar, remover usuários
-
 Registrar compras
-
 Recuperar histórico
 
 2. modules/item.py
@@ -114,6 +112,8 @@ Geração de recomendações:
 Baseadas em interesse ou histórico
 
 Sugere até 3 produtos relevantes
+
+
 
 🎯 Como Usar
 1️⃣ Cadastrar usuário → Nome
