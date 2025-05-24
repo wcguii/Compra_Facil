@@ -1,145 +1,85 @@
-📦 Compra Fácil
-Sistema de recomendação de produtos com interface gráfica em Tkinter e banco de dados SQLite.
+📦 Compra Fácil - Sistema de Recomendação de Produtos
 
-Permite gerenciar usuários, produtos, realizar compras e sugerir produtos com base no histórico de compras.
+💡 Descrição
 
-✅ Funcionalidades
+Compra Fácil é uma aplicação desktop em Python para gerenciar usuários, itens, compras e oferecer recomendações personalizadas de produtos.
+O sistema permite cadastrar, listar e remover usuários e itens, registrar compras e recomendar produtos com base no histórico de compras e similaridade entre usuários.
 
-📋 Cadastro, listagem e remoção de usuários
-
-
-💰 Registro de compras com seleção direta de produtos
-
-🤖 Sistema de recomendação:
-
-Para novos usuários → com base na categoria de interesse
-
-Para usuários existentes → com base no histórico de compras
-
-🖼️ Interface gráfica com Tkinter, organizada e intuitiva
-
-🗃️ Banco de dados SQLite3 para persistência de dados
-
-🏗️ Estrutura do Projeto
-
-compra_facil/
-
-├── data/
-
-│      └── users.db                # Banco de dados de usuários e compras
+🎯 Funcionalidades 
 
 
-│      └── items.db                # Banco de dados de produtos
+✅ Cadastro de novos usuários 
 
-├── images/
-  
- │  └── comprafacil.png         # Imagem do sistema
+✅ Listagem e remoção de usuários 
+
+✅ Cadastro, listagem e remoção de itens 
+
+✅ Realização de compras com vinculação ao usuário 
+
+✅ Recomendações para novos usuários baseadas na popularidade dos produtos 
+
+✅ Recomendações personalizadas baseadas no histórico de compras 
+
+✅ Interface gráfica moderna e responsiva com customtkinter
+
+Tecnologias Utilizadas
+
+Python 3.x
+
+Tkinter (interface gráfica)
+
+Pillow (PIL) para manipulação de imagens
+
+NumPy para cálculos de similaridade e manipulação de matrizes
+
+Estrutura do Projeto
+
+compra_facil/ 
+
+├── data/ 
+
+│  ├── itens.db # Banco de dados de produtos
+
+│  └── users.db # Banco de dados de usuários e compras 
+
+├── images/ 
+
+│  └── comprafacil.png # Imagem do sistema 
 
 ├── modules/
 
-│      ├── user.py                 # Lógica de usuários e compras
+│  ├── item.py # Lógica de itens/produtos 
 
-│      ├── item.py                 # Lógica de itens/produtos
+│  ├── recommendation.py # Sistema de recomendação
 
-│      └── recommendation.py       # Sistema de recomendação
+│  └── user.py # Lógica de usuários e compras 
 
+├── main.py # Arquivo principal, interface gráfica 
 
-├── main.py                     # Arquivo principal, interface gráfica
+└── readme.md # Instruções para uso do programa
 
+⚙️ Como Executar o Projeto
 
-└── README.md                   # Documentação
+Clone o repositório: git clone (https://github.com/wcguii/Compra_Facil)
 
+Instale as dependências: 
 
-Sobre a pasta __pycache__ :
-
-
-A pasta __pycache__ é criada automaticamente pelo Python para armazenar arquivos compilados (.pyc). Esses arquivos servem para acelerar a execução do código, evitando que o Python precise interpretar novamente os mesmos arquivos todas as vezes que o programa for executado.
-
-Importante:
-
-Não é necessário versionar ou enviar a pasta __pycache__ para o repositório.
-
-É uma pasta gerada automaticamente, portanto, pode (e deve) ser ignorada no versionamento de código.
-
-
-🛠️ Tecnologias Utilizadas
-Python 3.10+
-
-Tkinter - Interface gráfica
-
-SQLite3 - Banco de dados
-
-Pillow - Manipulação de imagens
-
-ttk - Componentes gráficos avançados
-
-🚀 Como Executar
-
-1 - Clone o repositório:
-
-git clone (https://github.com/wcguii/Compra_Facil)
-cd compra_facil
-
-2- Instale as dependências:
- 
-no seu console do visual code 
 pip install pillow
 
-3- Execute o sistema:
+numpy pip install 
+
+customtkinter pillow 
+
+Obs: O SQLite já está embutido no Python.
+
+3.Execute o aplicativo:
 
 python main.py
 
-✅ Ao iniciar, o sistema cria os bancos automaticamente e insere dados de exemplo se estiverem vazios.
+📊 Algoritmos de Recomendação Para novos usuários: sugestões baseadas na popularidade dos itens mais comprados.
 
-🖼️ Interface
-Topo: Logotipo e título
+Para usuários existentes: recomendações baseadas no histórico de compras.
 
-Centro: Painel dinâmico para formulários e mensagens
+👤 Autor Guilherme Cardoso da Silva
 
-Botões:
-→ Organizados em 2 linhas com 4 opções cada:
-
-Cadastrar Usuário | Listar Usuários | Remover Usuário | Adicionar Item  
-Listar Itens      | Remover Item    | Realizar Compra | Sair  
-
-
-🧑‍💻 Principais Módulos
-1. modules/user.py
-Funções para:
-
-Cadastrar, listar, remover usuários
-Registrar compras
-Recuperar histórico
-
-2. modules/item.py
-Funções para:
-
-Cadastrar, listar, remover itens
-
-Definir categorias de produtos
-
-3. modules/recommendation.py
-Geração de recomendações:
-
-Baseadas em interesse ou histórico
-
-Sugere até 3 produtos relevantes
-
-
-
-🎯 Como Usar
-1️⃣ Cadastrar usuário → Nome
-2️⃣ Adicionar itens → Nome + Tipo
-3️⃣ Realizar compra → Seleciona usuário e produto
-4️⃣ Sistema exibe recomendações personalizadas
-
-
-📝 Exemplo de fluxo:
-✅ Cadastrar: "Maria"
-✅ Adicionar: "Smartphone X", tipo "Eletrônicos"
-✅ Realizar compra → Escolher "Maria" e o "Smartphone"
-✅ Sistema recomenda mais "Eletrônicos" para "Maria"!
-
-👨‍💻 Autor
-Desenvolvido por Guilherme Cardoso Da Silva
-GitHub: https://github.com/wcguii
+https://github.com/wcguii
